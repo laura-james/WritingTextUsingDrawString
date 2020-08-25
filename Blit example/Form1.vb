@@ -16,5 +16,20 @@
 
     End Sub
 
+    REM Trying out Structures
+    Structure Book
+        Dim title As String
+        Dim releaseYear As Integer
+        Dim author As String
 
+    End Structure
+
+    Dim Hobbit As New Book
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Hobbit.title = "The Hobbit"
+        Hobbit.author = "JRR Tolkein"
+        Hobbit.releaseYear = "1950"
+        MsgBox(Hobbit.title)
+    End Sub
 End Class

@@ -30,7 +30,7 @@ Partial Class Form1
         Me.Button1.BackColor = System.Drawing.Color.DarkOrange
         Me.Button1.Font = New System.Drawing.Font("Lucida Fax", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Blue
-        Me.Button1.Location = New System.Drawing.Point(10, 203)
+        Me.Button1.Location = New System.Drawing.Point(31, 199)
         Me.Button1.Margin = New System.Windows.Forms.Padding(1)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(240, 87)
