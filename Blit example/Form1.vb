@@ -31,5 +31,45 @@
         Hobbit.author = "JRR Tolkein"
         Hobbit.releaseYear = "1950"
         MsgBox(Hobbit.title)
+        MsgBox(InterfaceColors.MistyRose)
+        Iterate()
     End Sub
+
+    REM Trying out Enums
+    'https://docs.microsoft.com/en-us/dotnet/visual-basic/language-reference/statements/enum-statement
+    Public Enum InterfaceColors
+        MistyRose = &HE1E4FF&
+        SlateGray = &H908070&
+        DodgerBlue = &HFF901E&
+        DeepSkyBlue = &HFFBF00&
+        SpringGreen = &H7FFF00&
+        ForestGreen = &H228B22&
+        Goldenrod = &H20A5DA&
+        Firebrick = &H2222B2&
+    End Enum
+    Enum EggSizeEnum
+        Jumbo
+        ExtraLarge
+        Large
+        Medium
+        Small
+    End Enum
+
+    Public Sub Iterate()
+        Dim names = [Enum].GetNames(GetType(EggSizeEnum))
+        For Each n In names
+            Console.Write(n & " ")
+        Next
+        Console.WriteLine()
+        ' Output: Jumbo ExtraLarge Large Medium Small 
+
+        Dim values = [Enum].GetValues(GetType(EggSizeEnum))
+        For Each value In values
+            Console.Write(value & " ")
+        Next
+        Console.WriteLine()
+        ' Output: 0 1 2 3 4 
+    End Sub
+    REM Downloading powerpacks
+    'https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/cc488277(v=vs.120)
 End Class
