@@ -30,9 +30,10 @@
         Hobbit.title = "The Hobbit"
         Hobbit.author = "JRR Tolkein"
         Hobbit.releaseYear = "1950"
-        MsgBox(Hobbit.title)
-        MsgBox(InterfaceColors.MistyRose)
+        ' MsgBox(Hobbit.title)
+        '  MsgBox(InterfaceColors.MistyRose)
         Iterate()
+
     End Sub
 
     REM Trying out Enums
@@ -69,6 +70,11 @@
         Next
         Console.WriteLine()
         ' Output: 0 1 2 3 4 
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        'open lines form
+        Lines.Show()
     End Sub
     REM Downloading powerpacks
     'https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/cc488277(v=vs.120)
